@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - Order Successful | 404Deals</title>
+    <meta name="description" content="Thank you for your Black Friday purchase! Contact our support team if you need any assistance.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-brand">
+                    <h1>404Deals</h1>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="index.html#deals">Deals</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-hero">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="success-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="#28a745" stroke-width="2" fill="none"/>
+                        <path d="m9 12 2 2 4-4" stroke="#28a745" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <h1 class="success-title">🎉 ORDER SUCCESSFUL!</h1>
+                <h2 class="success-subtitle">Thank You for Your Black Friday Purchase!</h2>
+                
+                <div class="success-details">
+                    <p>Your order has been confirmed and is being processed. You'll receive a confirmation email shortly with your order details and tracking information.</p>
+                    
+                    <div class="order-info">
+                        <div class="info-item">
+                            <span class="info-label">Order Number:</span>
+                            <span class="info-value" id="order-number">BF-2025-#####</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Estimated Delivery:</span>
+                            <span class="info-value" id="delivery-date">3-5 Business Days</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">Savings:</span>
+                            <span class="info-value savings">You saved up to 80%!</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <a href="index.html" class="secondary-button">Continue Shopping</a>
+                    <button onclick="scrollToContact()" class="cta-button">Contact Support</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Support Section -->
+    <section class="contact-support" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Need Help? Contact Our Support Team</h2>
+                <p>Our customer support team is here to help you with any questions or concerns about your order.</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke="#ff6b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email Support</h4>
+                                <p>support@404deals.com</p>
+                                <span class="response-time">Response within 24 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" stroke="#ff6b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>Phone Support</h4>
+                                <p>1-800-404-DEALS</p>
+                                <span class="response-time">Mon-Fri 9AM-6PM EST</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z" stroke="#ff6b35" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="method-details">
+                                <h4>Live Chat</h4>
+                                <p>Available 24/7</p>
+                                <span class="response-time">Instant response</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" data-testid="contact-form" id="support-form">
+                        <h3>Send us a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="customer-name">Full Name *</label>
+                            <input 
+                                type="text" 
+                                id="customer-name" 
+                                name="customerName" 
+                                required 
+                                aria-describedby="name-error"
+                                placeholder="Enter your full name"
+                            >
+                            <span class="error-message" id="name-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-email">Email Address *</label>
+                            <input 
+                                type="email" 
+                                id="customer-email" 
+                                name="customerEmail" 
+                                required 
+                                aria-describedby="email-error"
+                                placeholder="Enter your email address"
+                            >
+                            <span class="error-message" id="email-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <!-- Intentional accessibility issue: missing label for demo -->
+                            <input 
+                                type="text" 
+                                id="customer-order-id" 
+                                name="orderID" 
+                                placeholder="Order ID (optional)"
+                                aria-label="Order ID"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="customer-message">Message *</label>
+                            <textarea 
+                                id="customer-message" 
+                                name="message" 
+                                rows="5" 
+                                required 
+                                aria-describedby="message-error"
+                                placeholder="How can we help you?"
+                            ></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter-signup" name="newsletter">
+                                <span class="checkmark"></span>
+                                Subscribe to our newsletter for exclusive deals and updates
+                            </label>
+                        </div>
+
+                        <button type="submit" class="cta-button form-submit-btn">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common questions</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>When will my order ship?</h4>
+                    <p>Orders are typically processed within 1-2 business days. You'll receive tracking information once your order ships.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Can I change or cancel my order?</h4>
+                    <p>You can modify or cancel your order within 2 hours of placement. Contact our support team for assistance.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>What's your return policy?</h4>
+                    <p>We offer a 30-day return policy for all items. Products must be in original condition with all packaging.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Do you offer warranty on products?</h4>
+                    <p>Yes, all products come with manufacturer warranty. Extended warranty options are available at checkout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 404Deals | Powered by Black Friday Sales</p>
+        </div>
+    </footer>
+
+    <script src="thankyou.js"></script>
+</body>
+</html>
