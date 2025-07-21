@@ -5,10 +5,7 @@ exports.config = {
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
   runner: "local",
-  
-  // Disable automatic driver downloads for BrowserStack
-  automationProtocol: 'webdriver',
-  
+
   //
   // =================
   // Service Providers
@@ -70,7 +67,7 @@ exports.config = {
   //
   capabilities: [
     {
-      browserName: "chrome",
+      browserName: "Chrome",
       browserVersion: "latest",
       "bstack:options": {
         os: "Windows",
@@ -90,7 +87,7 @@ exports.config = {
       },
     },
     {
-      browserName: "MicrosoftEdge",
+      browserName: "Edge",
       browserVersion: "latest",
       "bstack:options": {
         os: "Windows",
@@ -220,8 +217,20 @@ exports.config = {
    * @param {object} config wdio configuration object
    * @param {Array.<Object>} capabilities list of capabilities details
    */
-  // onPrepare: function (config, capabilities) {
-  // },
+  /**
+   * Gets executed once before all workers get launched.
+   * @param {object} config wdio configuration object
+   * @param {Array.<Object>} capabilities list of capabilities details
+   */
+  onPrepare: function (config, capabilities) {
+    // Ensure we're using BrowserStack and not local drivers
+    console.log(
+      "🚀 Running tests on BrowserStack - skipping local driver setup"
+    );
+    process.env.WDIO_SKIP_DRIVER_INSTALL = "true";
+    process.env.SKIP_SELENIUM_INSTALL = "true";
+    process.env.EDGEDRIVER_SKIP_DOWNLOAD = "true";
+  },
   /**
    * Gets executed before a worker process is spawned and can be used to initialize specific service
    * for that worker as well as modify runtime environments in an async fashion.
