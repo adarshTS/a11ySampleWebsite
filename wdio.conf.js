@@ -68,7 +68,7 @@ exports.config = {
   capabilities: [
     {
       browserName: "Chrome",
-      browserVersion: "latest",
+      browserVersion: "135.0",
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
@@ -78,7 +78,7 @@ exports.config = {
     },
     {
       browserName: "firefox",
-      browserVersion: "latest",
+      browserVersion: "137.0",
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
@@ -88,7 +88,7 @@ exports.config = {
     },
     {
       browserName: "Edge",
-      browserVersion: "latest",
+      browserVersion: "135.0",
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
@@ -98,7 +98,7 @@ exports.config = {
     },
     {
       browserName: "safari",
-      browserVersion: "latest",
+      browserVersion: "18.4",
       "bstack:options": {
         os: "OS X",
         osVersion: "Sequoia",
