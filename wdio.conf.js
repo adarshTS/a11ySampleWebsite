@@ -1,6 +1,11 @@
 exports.config = {
+  runner: "browserstack",
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
+  hostname: "hub-cloud.browserstack.com",
+  port: 443,
+  protocol: "https",
+  path: "/wd/hub",
 
   specs: ["test.e2e.js"],
 
