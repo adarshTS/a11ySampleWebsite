@@ -49,15 +49,3 @@ jobs:
             logs/
             allure-results/
           retention-days: 30
-
-      - name: Generate test summary
-        if: always()
-        run: |
-          echo "# 🧪 Test Results Summary" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## ✅ Tests Completed" >> $GITHUB_STEP_SUMMARY
-          echo "- E2E tests executed on BrowserStack" >> $GITHUB_STEP_SUMMARY
-          echo "- Accessibility tests included in WebDriverIO configuration" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "## 📊 Artifacts" >> $GITHUB_STEP_SUMMARY
-          echo "Test results, screenshots, and logs are available in the workflow artifacts." >> $GITHUB_STEP_SUMMARY
