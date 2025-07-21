@@ -154,7 +154,24 @@ exports.config = {
   // Services take over a specific job you don't want to take care of. They enhance
   // your test setup with almost no effort. Unlike plugins, they don't add new
   // commands. Instead, they hook themselves up into the test process.
-  services: ["browserstack"],
+  services: [
+    [
+      "browserstack",
+      {
+        accessibility: true,
+        // Optional configuration options
+        accessibilityOptions: {
+          wcagVersion: "wcag21a",
+          includeIssueType: {
+            bestPractice: false,
+            needsReview: true,
+          },
+          //   'includeTagsInTestingScope': ['Specify tags of test cases to be included'],
+          //   'excludeTagsInTestingScope': ['Specify tags of test cases to be excluded']
+        },
+      },
+    ],
+  ],
 
   // Framework you want to run your specs with.
   // The following are supported: Mocha, Jasmine, and Cucumber
