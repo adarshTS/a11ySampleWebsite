@@ -1,3 +1,10 @@
+const now = new Date();
+const timestamp = now.toLocaleTimeString("en-US", { hour12: false });
+const commonOptions = {
+  projectName: "404Deals Black Friday Testing",
+  buildName: `E2E Tests ${timestamp}`,
+};
+
 exports.config = {
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
@@ -30,8 +37,7 @@ exports.config = {
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
-        projectName: "404Deals Black Friday Testing",
-        buildName: "E2E Tests",
+        ...commonOptions,
       },
     },
     {
@@ -40,8 +46,7 @@ exports.config = {
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
-        projectName: "404Deals Black Friday Testing",
-        buildName: "E2E Tests",
+        ...commonOptions,
       },
     },
     {
@@ -50,8 +55,7 @@ exports.config = {
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
-        projectName: "404Deals Black Friday Testing",
-        buildName: "E2E Tests",
+        ...commonOptions,
       },
     },
     {
@@ -60,14 +64,12 @@ exports.config = {
       "bstack:options": {
         os: "OS X",
         osVersion: "Sequoia",
-        projectName: "404Deals Black Friday Testing",
-        buildName: "E2E Tests",
+        ...commonOptions,
       },
     },
   ],
 
   logLevel: "info",
-  bail: 0,
   waitforTimeout: 10000,
   connectionRetryTimeout: 120000,
   connectionRetryCount: 3,
