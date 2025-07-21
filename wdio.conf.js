@@ -5,6 +5,10 @@ exports.config = {
   // ====================
   // WebdriverIO supports running e2e tests as well as unit and component tests.
   runner: "local",
+  
+  // Disable automatic driver downloads for BrowserStack
+  automationProtocol: 'webdriver',
+  
   //
   // =================
   // Service Providers
