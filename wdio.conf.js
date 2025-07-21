@@ -1,8 +1,9 @@
 const now = new Date();
-const timestamp = now.toLocaleTimeString("en-US", { hour12: false });
+const date = now.toLocaleDateString("en-US");
+const time = now.toLocaleTimeString("en-US", { hour12: false });
 const commonOptions = {
   projectName: "404Deals Black Friday Testing",
-  buildName: `E2E Tests ${timestamp}`,
+  buildName: `E2E Tests ${date} ${time}`,
 };
 
 exports.config = {
