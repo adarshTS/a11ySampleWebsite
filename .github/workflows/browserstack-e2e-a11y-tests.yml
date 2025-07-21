@@ -1,4 +1,4 @@
-name: BrowserStack E2E & Accessibility Tests
+name: BrowserStack E2E & Accessibility Tests Check2
 
 on:
   push:
