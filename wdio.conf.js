@@ -1,10 +1,4 @@
 exports.config = {
-  // runner: "local",
-
-  autoCompileOpts: {
-    autoCompile: false, // Prevent fallback to compiling TS/driver setup
-  },
-
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
 
@@ -32,7 +26,7 @@ exports.config = {
   capabilities: [
     {
       browserName: "Chrome",
-      browserVersion: "135.0",
+      browserVersion: "latest",
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
@@ -42,7 +36,7 @@ exports.config = {
     },
     {
       browserName: "firefox",
-      browserVersion: "137.0",
+      browserVersion: "latest",
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
@@ -52,7 +46,7 @@ exports.config = {
     },
     {
       browserName: "Edge",
-      browserVersion: "135.0",
+      browserVersion: "latest",
       "bstack:options": {
         os: "Windows",
         osVersion: "11",
@@ -62,7 +56,7 @@ exports.config = {
     },
     {
       browserName: "safari",
-      browserVersion: "18.4",
+      browserVersion: "latest",
       "bstack:options": {
         os: "OS X",
         osVersion: "Sequoia",
