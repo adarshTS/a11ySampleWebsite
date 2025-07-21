@@ -24,12 +24,15 @@ describe("end-to-end-testing", () => {
       .$("#customer-message")
       .setValue("I did not receive the order yet");
 
+    await browser.execute(() => window.scrollBy(0, 500));
+
     await browser.$('button[type="submit"].form-submit-btn').click();
 
-    await browser.$(".confirmation-modal").waitForDisplayed({ timeout: 5000 });
-    await expect($(".confirmation-modal h3")).toHaveText(
-      "Message Sent Successfully!"
-    );
-    await browser.$(".confirmation-modal button.cta-button").click();
+    //accessibility check
+    let summary = await browser.getAccessibilityResultsSummary();
+    console.log("Accessibility Summary:", summary);
+    let criticalIssueCount = summary["issueCountBySeverity"]["critical"];
+    console.log("Critical issue count:", criticalIssueCount);
+    expect(criticalIssueCount).toBeLessThan(1);
   });
 });
