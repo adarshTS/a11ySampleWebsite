@@ -1,6 +1,10 @@
 exports.config = {
   // runner: "local",
 
+  autoCompileOpts: {
+    autoCompile: false, // Prevent fallback to compiling TS/driver setup
+  },
+
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
 
