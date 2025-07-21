@@ -1,10 +1,6 @@
 exports.config = {
   user: process.env.BROWSERSTACK_USERNAME,
   key: process.env.BROWSERSTACK_ACCESS_KEY,
-  // hostname: "hub-cloud.browserstack.com",
-  // port: 443,
-  // protocol: "https",
-  // path: "/wd/hub",
 
   specs: ["test.e2e.js"],
 
@@ -84,12 +80,5 @@ exports.config = {
     timeout: 60000,
   },
 
-  onPrepare: function (config, capabilities) {
-    console.log(
-      "🚀 Running tests on BrowserStack - skipping local driver setup"
-    );
-    process.env.WDIO_SKIP_DRIVER_INSTALL = "true";
-    process.env.SKIP_SELENIUM_INSTALL = "true";
-    process.env.EDGEDRIVER_SKIP_DOWNLOAD = "true";
-  },
+  onPrepare: function (config, capabilities) {},
 };
