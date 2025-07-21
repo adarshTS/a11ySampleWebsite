@@ -1,4 +1,4 @@
-# Black Friday Sales Landing Page - 404Deals
+# 404Deals
 
 A modern, responsive Black Friday sales landing page built with vanilla HTML, CSS, and JavaScript. This project demonstrates both good automation testing practices and intentional accessibility issues for educational purposes.
 
